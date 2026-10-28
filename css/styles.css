@@ -1,0 +1,68 @@
+/* Shared styles for the Software Engineering Portfolio. */
+:root {
+  color-scheme: light;
+  --color-ink: #172b3a;
+  --color-muted: #425466;
+  --color-surface: #ffffff;
+  --color-page: #f3f7fa;
+  --color-brand: #124e78;
+  --color-brand-dark: #0b3553;
+  --color-accent: #d7ebf7;
+  --color-border: #c7d5df;
+  --color-note: #fff7df;
+  --content-width: 70rem;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+  color: var(--color-ink);
+  background: var(--color-page);
+}
+
+* { box-sizing: border-box; }
+body { min-width: 20rem; margin: 0; }
+a { color: var(--color-brand-dark); text-decoration-thickness: 0.08em; text-underline-offset: 0.16em; }
+a:hover { color: #071e30; }
+a:focus-visible, button:focus-visible { outline: 3px solid #a64b00; outline-offset: 3px; border-radius: 2px; }
+img, svg { max-width: 100%; height: auto; }
+.container { width: min(100% - 2rem, var(--content-width)); margin-inline: auto; }
+.skip-link { position: absolute; left: 1rem; top: -5rem; z-index: 10; padding: 0.65rem 1rem; background: var(--color-surface); color: var(--color-ink); }
+.skip-link:focus { top: 1rem; }
+.site-header { background: var(--color-brand-dark); color: #fff; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-block: 1rem; }
+.brand { color: #fff; font-size: 1.1rem; font-weight: 700; line-height: 1.3; text-decoration: none; }
+.brand:hover { color: #e2f3fc; }
+.header-note { margin: 0; color: #e2f3fc; }
+.site-nav ul { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; margin: 0; padding: 0; list-style: none; }
+.site-nav a { display: inline-block; padding: 0.25rem 0; color: #fff; font-weight: 600; text-decoration: none; border-bottom: 2px solid transparent; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { border-bottom-color: #b8e0f5; }
+.page-content { min-height: calc(100vh - 10rem); padding-block: 2.75rem 4rem; }
+.hero { padding: clamp(2rem, 7vw, 5rem); background: var(--color-accent); border-radius: 0.75rem; }
+.eyebrow { margin: 0 0 0.45rem; color: var(--color-brand-dark); font-size: 0.82rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; }
+h1, h2, h3 { line-height: 1.2; }
+h1 { max-width: 18ch; margin: 0 0 1rem; font-size: clamp(2.25rem, 6vw, 4rem); letter-spacing: -0.035em; }
+h2 { margin: 0 0 1rem; font-size: clamp(1.45rem, 3vw, 2rem); }
+h3 { margin: 0 0 0.7rem; font-size: 1.25rem; }
+.hero-copy { max-width: 58ch; font-size: 1.18rem; }
+.page-heading { max-width: 62ch; margin-bottom: 2.5rem; }
+.page-heading h1 { font-size: clamp(2.25rem, 5vw, 3.25rem); }
+.content-section { margin-block: 2rem; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: 1rem; }
+.card { padding: 1.35rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 0.55rem; box-shadow: 0 0.15rem 0.6rem rgb(23 43 58 / 6%); }
+.card p:last-child { margin-bottom: 0; }
+.tag { color: var(--color-muted); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+.button-link { display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1rem; border-radius: 0.35rem; background: var(--color-brand-dark); color: #fff; font-weight: 700; text-decoration: none; }
+.button-link:hover { background: #061f33; color: #fff; }
+.placeholder-note { padding: 1rem 1.15rem; border-left: 4px solid #9a5d00; background: var(--color-note); }
+.placeholder-list li { margin-block: 0.65rem; }
+code { padding: 0.1rem 0.3rem; background: #e8eef2; border-radius: 0.2rem; }
+.site-footer { padding-block: 1.25rem; background: #e5edf2; color: #33495a; font-size: 0.92rem; }
+.site-footer p { margin: 0; }
+
+@media (max-width: 48rem) {
+  .header-inner { align-items: flex-start; flex-direction: column; gap: 0.75rem; }
+  .site-nav ul { gap: 0.25rem 0.85rem; }
+  .page-content { padding-top: 2rem; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
