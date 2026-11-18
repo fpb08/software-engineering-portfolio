@@ -66,3 +66,24 @@ code { padding: 0.1rem 0.3rem; background: #e8eef2; border-radius: 0.2rem; }
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;    
+}
+
+th, td {
+  border: 1px solid #334155;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #3B82F6;
+  color: #F8FAFC;
+}
+
+tr:nth-of-type(even) {
+  background-color: #111C30;
+}
