@@ -28,11 +28,36 @@
     <header class="page-heading">
       <p class="eyebrow">Get in touch</p>
       <h1>Contact</h1>
-      <p>Contact details are not published on this portfolio yet.</p>
+      <p>My contact details are not published on this portfolio yet.</p>
     </header>
     <section class="content-section" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact information</h2>
-      <p>Add a contact method here if you decide you are comfortable sharing it publicly.</p>
+      <h2 id="contact-heading"> Get in Contact with Me</h2>
+
+      <form>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Your Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject">
+          <option value="general">General Question</option>
+          <option value="projects">Projects</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Type your message here:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Send Message">
+        <input type="reset" value="Reset">
+        
+      </form>
     </section>
   </main>
   <footer class="site-footer">
