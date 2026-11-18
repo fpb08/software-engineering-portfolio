@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title description">
+  <title id="title">Software Engineering Portfolio site map</title>
+  <desc id="description">Home is at the top of the site map and links to About Me, Projects, Skills, Resume, and Contact.</desc>
+  <defs>
+    <style>
+      .canvas { fill: #f3f7fa; }
+      .box { fill: #ffffff; stroke: #124e78; stroke-width: 3; rx: 14; }
+      .home { fill: #0b3553; stroke: #0b3553; }
+      .line { fill: none; stroke: #607d91; stroke-width: 3; }
+      .label { fill: #172b3a; font: 600 21px "Segoe UI", Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; }
+      .home-label { fill: #ffffff; font: 700 24px "Segoe UI", Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; }
+      .title { fill: #172b3a; font: 700 28px "Segoe UI", Arial, sans-serif; text-anchor: middle; }
+      .caption { fill: #425466; font: 16px "Segoe UI", Arial, sans-serif; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect class="canvas" width="1000" height="600"/>
+  <text class="title" x="500" y="52">Software Engineering Portfolio</text>
+  <text class="caption" x="500" y="82">Main website pages and navigation structure</text>
+  <path class="line" d="M500 175 V238 M110 238 H890 M110 238 V310 M305 238 V310 M500 238 V310 M695 238 V310 M890 238 V310"/>
+  <rect class="box home" x="360" y="110" width="280" height="66"/>
+  <text class="home-label" x="500" y="143">Home</text>
+  <rect class="box" x="35" y="310" width="150" height="72"/>
+  <text class="label" x="110" y="346">About Me</text>
+  <rect class="box" x="230" y="310" width="150" height="72"/>
+  <text class="label" x="305" y="346">Projects</text>
+  <rect class="box" x="425" y="310" width="150" height="72"/>
+  <text class="label" x="500" y="346">Skills</text>
+  <rect class="box" x="620" y="310" width="150" height="72"/>
+  <text class="label" x="695" y="346">Resume</text>
+  <rect class="box" x="815" y="310" width="150" height="72"/>
+  <text class="label" x="890" y="346">Contact</text>
+  <text class="caption" x="500" y="465">All six pages share the same main navigation.</text>
+  <text class="caption" x="500" y="496">The separate proposal.html is not part of the main navigation.</text>
+  <text class="caption" x="500" y="550">Open this SVG directly in a browser to preview or screenshot it.</text>
+</svg>
