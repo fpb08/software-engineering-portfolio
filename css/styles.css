@@ -84,6 +84,6 @@ th {
   color: #F8FAFC;
 }
 
-tr:nth-of-type(even) {
+tr:nth-of-type(even) td {
   background-color: #111C30;
 }
