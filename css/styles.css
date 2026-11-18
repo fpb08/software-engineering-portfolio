@@ -80,8 +80,7 @@ th, td {
 }
 
 th {
-  background-color: #191970;
-  color: #F8FAFC;
+  color: #72bcd4;
 }
 
 tr:nth-of-type(even) td {
