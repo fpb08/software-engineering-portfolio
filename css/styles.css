@@ -61,12 +61,26 @@ code { padding: 0.1rem 0.3rem; background: #e8eef2; border-radius: 0.2rem; }
   .header-inner { align-items: flex-start; flex-direction: column; gap: 0.75rem; }
   .site-nav ul { gap: 0.25rem 0.85rem; }
   .page-content { padding-top: 2rem; }
+  
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .about-image {
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 220px;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
 }
 
+/* Skills page table styles */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -88,6 +102,7 @@ tr:nth-of-type(even) td {
   background-color: #111C30;
 }
 
+/* Resume page styles */
 .resume-section {
   margin: 10px 0;
 }
@@ -99,4 +114,28 @@ tr:nth-of-type(even) td {
     padding: 25px;
     margin-top: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* About Me page styles layout */
+.about-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 30px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.about-content section {
+    margin-bottom: 35px;
+}
+
+.about-content h2 {
+    margin-bottom: 12px;
 }
