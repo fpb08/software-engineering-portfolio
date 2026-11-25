@@ -87,3 +87,7 @@ th {
 tr:nth-of-type(even) td {
   background-color: #111C30;
 }
+
+.resume-section {
+  margin: 10px 0;
+}
