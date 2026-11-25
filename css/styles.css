@@ -239,3 +239,9 @@ tr:nth-of-type(even) td {
 .home-page .hero {
     background: transparent;
 }
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
