@@ -223,3 +223,19 @@ tr:nth-of-type(even) td {
         padding: 20px;
     }
 }
+
+/* Home page background gradient style */
+.home-page {
+    background: linear-gradient(
+        to bottom,
+        #F3F7FA 0%,
+        #D7EBF7 35%,
+        #8BB9D6 70%,
+        #5B91B8 100%
+    );
+    background-repeat: no-repeat;
+}
+
+.home-page .hero {
+    background: transparent;
+}
