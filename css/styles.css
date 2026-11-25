@@ -242,7 +242,7 @@ tr:nth-of-type(even) td {
 
 video {
     width: 100%;
-    max-width: 650px;
+    max-width: 550px;
     height: auto;
     display: block;
     border-radius: 8px;
